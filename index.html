@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techwind | Digital Webhub</title>
+    <link rel="icon" type="image/x-icon" href="./Res/Fav - Copy.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ddf7c8821d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          screens: {
+            xs: "475px",
+            "xs-2": "520px",
+            sm: "640px",
+            md: "768px",
+            lg: "1060px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+          extend: {
+            screens: {
+              "xs-2": "520px",
+            },
+            colors: {},
+            backgroundImage: {
+              home: "url('./Res/home.jpg')",
+              FAQ: "url('./Res/cta.jpg')",
+            },
+            container: {
+              screens: {
+                md: "750px",
+                lg: "1050px",
+                xl: "1300px",
+              },
+            },
+            keyframes: {},
+            animation: {},
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <link rel="stylesheet" href="./Css/custome.css" />
+  </head>
+  <body class="text-base text-black dark:text-white dark:bg-slate-900">
+    <nav
+      class="py-6 bg-white dark:bg-slate-900 fixed top-0 left-0 w-full z-10 scroll-down-toggle scroll-down-toggle-light trasition-all duration-300"
+    >
+      <div
+        class="container px-4 md:px-0 relative mx-auto flex justify-between items-center"
+      >
+        <a href="#" class="flex">
+          <img
+            class="block dark:hidden w-[170px]"
+            src="./Res/Digital Webhub Color.png"
+            alt=""
+          />
+          <img
+            class="hidden dark:block w-[170px]"
+            src="./Res/Digital Webhub white.png"
+            alt=""
+          />
+        </a>
+        <div class="flex items-center gap-x-6 text-lg font-medium">
+          <a
+            class="hover:text-blue-600 hidden md:block relative after:absolute after:-bottom-1 after:hover:w-full after:left-0 after:w-0 after:transition-all after:duration-500 after:h-[2px] after:bg-blue-700"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="hover:text-blue-600 hidden md:block relative after:absolute after:-bottom-1 after:hover:w-full after:left-0 after:w-0 after:transition-all after:duration-500 after:h-[2px] after:bg-blue-700"
+            href="#"
+            >About Us</a
+          >
+          <a
+            class="hover:text-blue-600 hidden md:block relative after:absolute after:-bottom-1 after:hover:w-full after:left-0 after:w-0 after:transition-all after:duration-500 after:h-[2px] after:bg-blue-700"
+            href="#"
+            >Blog</a
+          >
+          <a
+            class="hover:text-blue-600 hidden md:block relative after:absolute after:-bottom-1 after:hover:w-full after:left-0 after:w-0 after:transition-all after:duration-500 after:h-[2px] after:bg-blue-700"
+            href="#"
+            >Contact</a
+          >
+
+          <button
+            class="py-2 px-4 dark:px-3 rounded-full shadow-cus shadow-cus-light"
+            id="darkBtn"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button class="block md:hidden" id="menu-master-controls">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="absolute z-[40] menu-deactive dark:bg-slate-900 menu-controls shadow-cusV2 shadow-cus-light top-[153%] py-4 px-4 gap-y-3 font-medium text-lg flex-col left-1/2 -translate-x-1/2 bg-white w-full max-w-[500px]"
+        >
+          <a class="hover:text-blue-600" href="#">Home</a>
+          <a class="hover:text-blue-600" href="#">About Us</a>
+          <a class="hover:text-blue-600" href="#">Blog</a>
+          <a class="hover:text-blue-600" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="relative table w-full py-44 px-4 md:px-0 overflow-hidden bg-gradient-to-b to-transparent from-indigo-600/20 dark:from-indigo-600/40"
+    >
+      <div
+        class="container mx-auto flex items-center gap-x-20 justify-center flex-col lg:flex-row"
+      >
+        <div class="w-full">
+          <h1
+            class="font-bold lg:leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative"
+          >
+            Easy way to
+            <span
+              class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:-z-10 text-white before:bg-indigo-600 relative inline-block"
+              >manage</span
+            >
+            <span class="block">your over work</span>
+          </h1>
+          <p class="text-slate-400 text-lg max-w-xl">
+            Launch your campaign and benefit from our expertise on designing and
+            managing conversion centered Tailwind CSS v3.x html page.
+          </p>
+          <div class="mt-6 mb-3">
+            <form action="#" class="relative max-w-xl">
+              <input
+                type="email"
+                class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-800"
+                placeholder="Your Email Address :"
+                name="email"
+              />
+              <button
+                type="submit"
+                class="py-2 px-5 flex items-center gap-x-3 items-center item-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full"
+              >
+                Try it for free
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </form>
+          </div>
+          <span class="text-slate-400 font-medium"
+            >Looking for help?
+            <a href="#" class="text-indigo-600">Get in touch with us</a></span
+          >
+        </div>
+        <div
+          class="w-full lg:w-[80%] bg-home h-[600px] bg-no-repeat bg-cover bg-center relative rounded-xl relative shadow-md dark:shadow-gray-800 md:mr-16"
+        >
+          <div
+            class="absolute flex justify-between items-center md:bottom-10 bottom-5 md:-start-16 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3"
+          >
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center h-[65px] min-w-[65px] bg-indigo-600/5 text-indigo-600 text-center rounded-full me-3"
+              >
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <div class="flex-1">
+                <h1 class="text-slate-400">Visitor</h1>
+                <p class="text-xl font-bold">
+                  <span class="counter-value">4,589</span>
+                </p>
+              </div>
+            </div>
+            <span class="text-red-600 flex items-center"
+              ><i class="fa-solid fa-arrow-trend-down mr-2"></i> 0.5%</span
+            >
+          </div>
+          <div
+            class="absolute xl:top-20 top-40 xl:-end-20 lg:-end-10 -end-1 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3"
+          >
+            <h1 class="text-xl font-semibold mb-3">Manage Your Software</h1>
+            <div class="flex justify-between mt-3 mb-2">
+              <span class="text-slate-400">Work in progress</span>
+              <span class="text-slate-400">84%</span>
+            </div>
+            <div
+              class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]"
+            >
+              <div
+                class="bg-indigo-600 h-[6px] rounded-full"
+                style="width: 84%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative px-4 md-0 md:pb-24 pb-16 overflow-hidden">
+      <div class="container mx-auto relative">
+        <div class="grid grid-cols-1 pb-8 text-center">
+          <div
+            class="flex items-center justify-center rounded-full mx-auto bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 w-[110px] h-[110px]"
+          >
+            <img
+              loading="lazy"
+              width="46"
+              height="46"
+              decoding="async"
+              class="block mx-auto"
+              style="color: transparent"
+              src="./Res/Fav.png"
+              alt=""
+            />
+          </div>
+          <h1
+            class="mb-6 mt-8 md:text-4xl text-xl md:leading-normal leading-normal font-bold"
+          >
+            The best customer relationship <br />
+            management platform for just <br />
+            about
+            <span
+              class="after:absolute after:end-0 after:start-0 after:bottom-1 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-indigo-600/30 relative text-indigo-600"
+              >everything.</span
+            >
+          </h1>
+          <p class="text-slate-400 max-w-xl mx-auto">
+            Start working with Tailwind CSS that can provide everything you need
+            to generate awareness, drive traffic, connect.
+          </p>
+        </div>
+        <div class="grid mt-8">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md dark:shadow-gray-800"
+          >
+            <video controls autoplay loop>
+              <source src="./Res/modern.mp4" type="video/mp4" />
+            </video>
+            <button
+              id="playBtn"
+              class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center"
+            >
+              <a
+                class="lightbox lg:h-20 h-16 lg:w-20 w-16 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 hover:bg-indigo-600 dark:hover:bg-indigo-600 text-indigo-600 hover:text-white duration-500 ease-in-out mx-auto"
+                data-type="youtube"
+                data-id="S_CGed6E610"
+                ><i
+                  class="fa-solid fa-play inline-flex items-center justify-center text-3xl"
+                ></i
+              ></a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="modal-video"
+          class="modal-video"
+          tabindex="-1"
+          role="dialog"
+          area-modal="true"
+          aria-label="You just opened the modal video"
+        >
+          <div class="modal-video-body">
+            <div class="modal-video-inner" style="width: 100%">
+              <div
+                class="modal-video-movie-wrap"
+                style="padding-bottom: 56.25%"
+              >
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/j6dKHisNISU?si=TNFhW-6g03QJXU0g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <button
+                  id="pauseBtn"
+                  class="modal-video-close-btn"
+                  aria-label="Close the modal by clicking here"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container relative md:mt-24 mt-16 mx-auto">
+        <div
+          class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp"
+          data-wow-delay=".1s"
+        >
+          <h1
+            class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold"
+          >
+            Why Everyone Loves Techwind
+          </h1>
+          <p class="text-slate-400 max-w-xl mx-auto">
+            Start working with Tailwind CSS that can provide everything you need
+            to generate awareness, drive traffic, connect.
+          </p>
+        </div>
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 items-center mt-16 gap-[30px]"
+        >
+          <div
+            class="relative wow animate__animated animate__fadeInLeft"
+            data-wow-delay=".3s"
+          >
+            <img
+              alt=""
+              loading="lazy"
+              width="0"
+              height="0"
+              decoding="async"
+              data-nimg="1"
+              class="rounded-lg shadow-md dark:shadow-gray-800"
+              style="color: transparent; width: 100%; height: auto"
+              sizes="100vw"
+              src="./Res/classic02.webp"
+            />
+            <div
+              class="overflow-hidden absolute lg:h-[400px] h-[320px] lg:w-[400px] w-[320px] bg-indigo-600/5 bottom-0 start-0 rotate-45 -z-1 rounded-3xl -z-10"
+            ></div>
+          </div>
+          <div
+            class="lg:ms-8 wow animate__animated animate__fadeInRight"
+            data-wow-delay=".3s"
+          >
+            <h1 class="mb-4 text-2xl leading-normal font-medium">
+              Great Product Analytics <br />
+              With Real Problem
+            </h1>
+            <p class="text-slate-400">
+              Due to its widespread use as filler text for layouts,
+              non-readability is of great importance: human perception is tuned
+              to recognize certain patterns and repetitions in texts. If the
+              distribution of letters visual impact.
+            </p>
+            <ul class="list-none text-slate-400 mt-4">
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Digital Marketing Solutions for Tomorrow
+              </li>
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Our Talented & Experienced Marketing Agency
+              </li>
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Create your own skin to match your brand
+              </li>
+            </ul>
+            <div class="mt-4">
+              <a
+                href="#"
+                class="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-590 after:bg-indigo-600 duration-500"
+                >Find Out More
+                <i class="fa-solid text-indigo-600 ml-2 fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto relative md:mt-24 mt-16">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+          <div
+            class="relative order-1 md:order-2 wow animate__animated animate__fadeInRight"
+            data-wow-delay=".5s"
+          >
+            <img
+              alt=""
+              loading="lazy"
+              width="0"
+              height="0"
+              decoding="async"
+              data-nimg="1"
+              class="rounded-lg shadow-md dark:shadow-gray-800"
+              style="color: transparent; width: 100%; height: auto"
+              sizes="100vw"
+              src="./Res/classic03.webp"
+            />
+            <div
+              class="overflow-hidden absolute lg:h-[400px] h-[320px] lg:w-[400px] w-[320px] -z-10 bg-indigo-600/5 bottom-0 end-0 rotate-45 -z-1 rounded-3xl"
+            ></div>
+          </div>
+          <div
+            class="lg:me-8 order-2 md:order-1 wow animate__animated animate__fadeInLeft"
+            data-wow-delay=".5s"
+          >
+            <h1 class="mb-4 text-2xl leading-normal font-medium">
+              Get Notified About Importent Email
+            </h1>
+            <p class="text-slate-400">
+              Due to its widespread use as filler text for layouts,
+              non-readability is of great importance: human perception is tuned
+              to recognize certain patterns and repetitions in texts. If the
+              distribution of letters visual impact.
+            </p>
+            <ul class="list-none text-slate-400 mt-4">
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Digital Marketing Solutions for Tomorrow
+              </li>
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Our Talented & Experienced Marketing Agency
+              </li>
+              <li class="mb-1 flex items-center">
+                <i class="fa-regular fa-circle-check mr-2 text-indigo-600"></i>
+                Create your own skin to match your brand
+              </li>
+            </ul>
+            <div class="mt-4">
+              <a
+                href="#"
+                class="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-590 after:bg-indigo-600 duration-500"
+                >Find Out More
+                <i class="fa-solid text-indigo-600 ml-2 fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:mt-24 mt-16">
+        <div class="container relative mx-auto">
+          <div class="grid grid-cols-1 pb-8 text-center">
+            <h1
+              class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"
+            >
+              What Our Users Say
+            </h1>
+            <p class="text-slate-400 max-w-xl mx-auto">
+              Start working with Techwind that can provide everything you need
+              to generate awareness, drive traffic, connect.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 mt-8 swiper">
+            <div class="w-full flex items-center swiper-wrapper">
+              <div class="w-[31%] swiper-slide">
+                <div
+                  class="border dark:border-[rgba(148,163,184,1)] pt-6 pb-8 px-6 flex flex-col items-center relative after:absolute after:top-[93%] after:left-1/2 after:-translate-x-1/2 after:content-[''] after:w-6 after:h-6 after:rotate-45 after:bg-white dark:after:bg-slate-900 after:border-t-none after:border-b after:border-r after:border-l-none dark:after:border-[rgba(148,163,184,1)]"
+                >
+                  <i
+                    class="fa-solid fa-quote-left text-3xl text-indigo-600"
+                  ></i>
+                  <p class="text-center my-4 text-slate-400">
+                    Thus, Lorem Ipsum has only limited suitability as a visual
+                    filler for German texts.
+                  </p>
+                  <span class="w-fit text-xs mx-auto text-amber-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    class="w-[60px] rounded-full"
+                    src="./Res/04.webp"
+                    alt=""
+                  />
+                  <h1 class="mt-2 font-semibold">Christa Smith</h1>
+                  <p class="text-slate-400 text-sm">Manager</p>
+                </div>
+              </div>
+              <div class="w-[31%] swiper-slide">
+                <div
+                  class="border dark:border-[rgba(148,163,184,1)] pt-6 pb-8 px-6 flex flex-col items-center relative after:absolute after:top-[93%] after:left-1/2 after:-translate-x-1/2 after:content-[''] after:w-6 after:h-6 after:rotate-45 after:bg-white dark:after:bg-slate-900 after:border-t-none after:border-b after:border-r after:border-l-none dark:after:border-[rgba(148,163,184,1)]"
+                >
+                  <i
+                    class="fa-solid fa-quote-left text-3xl text-indigo-600"
+                  ></i>
+                  <p class="text-center my-4 text-slate-400">
+                    Thus, Lorem Ipsum has only limited suitability as a visual
+                    filler for German texts.
+                  </p>
+                  <span class="w-fit text-xs mx-auto text-amber-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    class="w-[60px] rounded-full"
+                    src="./Res/04.webp"
+                    alt=""
+                  />
+                  <h1 class="mt-2 font-semibold">Christa Smith</h1>
+                  <p class="text-slate-400 text-sm">Manager</p>
+                </div>
+              </div>
+              <div class="w-[31%] swiper-slide">
+                <div
+                  class="border dark:border-[rgba(148,163,184,1)] pt-6 pb-8 px-6 flex flex-col items-center relative after:absolute after:top-[93%] after:left-1/2 after:-translate-x-1/2 after:content-[''] after:w-6 after:h-6 after:rotate-45 after:bg-white dark:after:bg-slate-900 after:border-t-none after:border-b after:border-r after:border-l-none dark:after:border-[rgba(148,163,184,1)]"
+                >
+                  <i
+                    class="fa-solid fa-quote-left text-3xl text-indigo-600"
+                  ></i>
+                  <p class="text-center my-4 text-slate-400">
+                    Thus, Lorem Ipsum has only limited suitability as a visual
+                    filler for German texts.
+                  </p>
+                  <span class="w-fit text-xs mx-auto text-amber-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    class="w-[60px] rounded-full"
+                    src="./Res/04.webp"
+                    alt=""
+                  />
+                  <h1 class="mt-2 font-semibold">Christa Smith</h1>
+                  <p class="text-slate-400 text-sm">Manager</p>
+                </div>
+              </div>
+              <div class="w-[31%] swiper-slide">
+                <div
+                  class="border dark:border-[rgba(148,163,184,1)] pt-6 pb-8 px-6 flex flex-col items-center relative after:absolute after:top-[93%] after:left-1/2 after:-translate-x-1/2 after:content-[''] after:w-6 after:h-6 after:rotate-45 after:bg-white dark:after:bg-slate-900 after:border-t-none after:border-b after:border-r after:border-l-none dark:after:border-[rgba(148,163,184,1)]"
+                >
+                  <i
+                    class="fa-solid fa-quote-left text-3xl text-indigo-600"
+                  ></i>
+                  <p class="text-center my-4 text-slate-400">
+                    Thus, Lorem Ipsum has only limited suitability as a visual
+                    filler for German texts.
+                  </p>
+                  <span class="w-fit text-xs mx-auto text-amber-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-6">
+                  <img
+                    class="w-[60px] rounded-full"
+                    src="./Res/04.webp"
+                    alt=""
+                  />
+                  <h1 class="mt-2 font-semibold">Christa Smith</h1>
+                  <p class="text-slate-400 text-sm">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container relative md:mt-24 mt-16 mx-auto">
+        <div class="grid lg:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+          <div class="lg:col-span-5">
+            <div class="lg:text-start text-center">
+              <h1
+                class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold"
+              >
+                Our Comfortable Rates
+              </h1>
+              <p class="text-slate-400 max-w-xl mx-auto">
+                Start working with Tailwind CSS that can provide everything you
+                need to generate awareness, drive traffic, connect.
+              </p>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="py-2 px-5 inline-flex gap-x-3 items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"
+                  ><i class="fa-solid fa-infinity"></i> Subscribe Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 mt-8 lg:mt-0">
+            <div class="lg:ms-8">
+              <div class="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-[30px]">
+                <div
+                  class="group border-b-[3px] dark:border-gray-700 relative shadow dark:shadow-gray-800 rounded-md md:scale-110 z-10 bg-white dark:bg-slate-900"
+                >
+                  <div class="p-6 py-8">
+                    <h1 class="font-bold uppercase mb-5 text-indigo-600">
+                      Starter
+                    </h1>
+                    <div class="flex mb-5">
+                      <span class="text-xl font-semibold">$</span>
+                      <span class="price text-4xl font-semibold mb-0">39</span>
+                      <span class="text-xl font-semibold self-end mb-1"
+                        >/mo</span
+                      >
+                    </div>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Full Access
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Source Files
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Free Appointments
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Enhanced Security
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="group border-b-[3px] dark:border-gray-700 relative shadow dark:shadow-gray-800 rounded-md bg-gray-50 dark:bg-slate-800"
+                >
+                  <div class="p-6 py-8 md:ps-10">
+                    <h1 class="font-bold uppercase mb-5 text-indigo-600">
+                      Professional
+                    </h1>
+                    <div class="flex mb-5">
+                      <span class="text-xl font-semibold">$</span>
+                      <span class="price text-4xl font-semibold mb-0">59</span>
+                      <span class="text-xl font-semibold self-end mb-1"
+                        >/mo</span
+                      >
+                    </div>
+                    <ul class="list-none text-slate-400">
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Full Access
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Source Files
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Free Appointments
+                      </li>
+                      <li class="mb-1 flex items-center">
+                        <i
+                          class="fa-regular fa-circle-check mr-2 text-indigo-600"
+                        ></i>
+                        Enhanced Security
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5"
+                      >Try it Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container relative md:mt-24 mt-16 mx-auto">
+        <div class="grid grid-cols-1 pb-8 text-center">
+          <h1
+            class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"
+          >
+            Frequently Asked Questions
+          </h1>
+          <p class="text-slate-400 max-w-xl mx-auto">
+            Start working with Tailwind CSS that can provide everything you need
+            to generate awareness, drive traffic, connect.
+          </p>
+        </div>
+        <div
+          class="relative grid md:grid-cols-12 grid-cols-1 items-center mt-8 gap-[30px]"
+        >
+          <div class="md:col-span-6">
+            <div class="relative">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-md dark:shadow-gray-800"
+              >
+                <div
+                  class="w-full py-72 bg-slate-400 bg-no-repeat bg-FAQ bg-top bg-cover jarallax"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-6">
+            <div id="accordion-collapse">
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-up icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-down icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-down icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-down icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-down icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4 FAQ-div"
+              >
+                <h2
+                  class="text-base font-semibold"
+                  id="accordion-collapse-heading-1"
+                >
+                  <button
+                    class="flex justify-between items-center p-5 w-full font-medium text-start bg-gray-50 dark:bg-slate-800 text-indigo-600"
+                    type="button"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1"
+                  >
+                    <span>How does it work ?</span>
+                    <i class="fa-solid fa-angle-down icon-change"></i>
+                  </button>
+                </h2>
+                <div>
+                  <div class="p-5">
+                    <p class="text-slate-400 dark:text-gray-400">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container relative md:mt-24 mt-16 mx-auto">
+        <div class="grid grid-cols-1 text-center">
+          <h1
+            class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold"
+          >
+            Have Question ? Get in touch!
+          </h1>
+          <p class="text-slate-400 max-w-xl mx-auto">
+            Start working with Tailwind CSS that can provide everything you need
+            to generate awareness, drive traffic, connect.
+          </p>
+          <div class="mt-6">
+            <a
+              href="#"
+              class="py-2 gap-x-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-4"
+              ><i class="fa-solid fa-phone"></i> Contact us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-0 bg-[rgb(25,33,50)]">
+      <footer class="footer relative text-gray-200 dark:text-gray-200">
+        <div class="container relative mx-auto">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12">
+              <div class="py-[60px] px-0">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                  <div class="lg:col-span-4 md:col-span-12">
+                    <a href="#" class="text-[22px] focus:outline-none">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        width="170"
+                        decoding="async"
+                        data-nimg="1"
+                        style="color: transparent"
+                        src="./Res/Digital Webhub white.png"
+                      />
+                    </a>
+                    <p class="mt-6 text-gray-300">
+                      Start working with Tailwind CSS that can provide
+                      everything you need to generate awareness, drive traffic,
+                      connect.
+                    </p>
+                    <ul class="list-none mt-5 space-x-1 space-y-1">
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-brands fa-square-behance"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-solid fa-globe"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                      </li>
+                      <li class="inline">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                          ><i class="fa-solid fa-file"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-2 md:col-span-4">
+                    <h1 class="tracking-[1px] text-gray-100 font-semibold">
+                      Company
+                    </h1>
+                    <ul class="list-none footer-list mt-6">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i>About
+                          us</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Services</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i>Team</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Pricing</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Project</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i>Blog</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Login</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4">
+                    <h1 class="tracking-[1px] text-gray-100 font-semibold">
+                      Usefull Links
+                    </h1>
+                    <ul class="list-none footer-list mt-6">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i>Terms
+                          of Services</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i>Privacy
+                          Policy</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Documentation</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Changelog</a
+                        >
+                      </li>
+                      <li class="mt-[10px]">
+                        <a
+                          href="#"
+                          class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out flex items-center"
+                          ><i class="fa-solid mr-2 fa-chevron-right"></i
+                          >Widget</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4">
+                    <h1 class="tracking-[1px] text-gray-100 font-semibold">
+                      Newsletter
+                    </h1>
+                    <p class="mt-6">
+                      Sign up and receive the latest tips via email.
+                    </p>
+                    <form>
+                      <div class="grid grid-cols-1">
+                        <div class="foot-subscribe my-3">
+                          <label class="form-label"
+                            >Write your email
+                            <span class="text-red-600">*</span></label
+                          >
+                          <div
+                            class="flex relative items-center gap-x-4 mt-2 ps-4 rounded w-full py-2 h-10 bg-gray-800 border-0 text-gray-100 focus:shadow-none focus:ring-0"
+                          >
+                            <i class="fa-regular text-white fa-envelope"></i>
+                            <input
+                              type="email"
+                              class="form-input bg-transparent outline-none border-none"
+                              placeholder="Email"
+                              name="email"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          id="submitsubscribe"
+                          class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
+                          name="send"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-[30px] px-0 border-t border-slate-800">
+          <div class="container relative text-center mx-auto">
+            <div class="grid md:grid-cols-2 items-center">
+              <div class="md:text-start text-center">
+                <p class="mb-0">
+                  <i class="fa-solid fa-copyright"></i
+                  ><span class="mx-2" id="year"></span
+                  ><span>Techwind. Design & Develop with </span
+                  ><span class="mx-2"
+                    ><i class="fa-solid text-red-500 fa-heart"></i></span
+                  ><a href="https://digitalwebhub.co.in/" target="_blank"
+                    >by Digitalwebhub</a
+                  >
+                </p>
+              </div>
+              <ul
+                class="list-none md:text-end text-center space-x-1 mt-6 md:mt-0"
+              >
+                <li class="inline">
+                  <i class="fa-brands fa-cc-amex"></i>
+                </li>
+                <li class="inline">
+                  <i class="fa-brands fa-cc-discover"></i>
+                </li>
+                <li class="inline">
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                </li>
+                <li class="inline">
+                  <i class="fa-brands fa-cc-paypal"></i>
+                </li>
+                <li class="inline">
+                  <i class="fa-brands fa-cc-visa"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <a
+      id="back-to-top"
+      class="back-to-top hidden fixed text-lg rounded-full z-10 bottom-5 end-2 h-9 w-9 text-center bg-indigo-600 text-white leading-9 flex items-center justify-center"
+      href="#"
+      ><svg
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 20 20"
+        aria-hidden="true"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"
+        ></path></svg
+    ></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>
